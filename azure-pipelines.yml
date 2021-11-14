@@ -6,7 +6,7 @@ pool:
 
 variables:
   imageName: azure-pipelines-canary-k8s
-  dockerRegistryServiceConnection: dockerRegistryServiceConnectionName #replace with name of your Docker registry service connection
+  dockerRegistryServiceConnection: azure-pipelines-canary-k8s #replace with name of your Docker registry service connection
   imageRepository: 'azure-pipelines-canary-k8s'
   containerRegistry: kpkubetestconreg.azurecr.io #replace with the name of your container registry, Should be in the format foobar.azurecr.io
   tag: '$(Build.BuildId)'
